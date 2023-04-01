@@ -52,7 +52,7 @@ function equals(){
         let arr = current.split(' ')
         let result = doMath(arr)
         console.log(result+'')
-        bottomNo.innerText=current + result
+        bottomNo.innerText+=' = '+ result
         // // needs repair!!
         // if (typeof(result)=='number') bottomNo.innerText+=' = ' + result
         // else{
