@@ -1,43 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-    	<meta charset="utf-8">
-    	<meta name="description" content="This is where your description goes">
-    	<meta name="keywords" content="one, two, three">
+    <head>
+        <meta charset="UTF-8">
+        <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>calculator</title>
+        <meta name="description" content="flexbox nameofproject">
+      	<meta name="keywords" content="one, two, three">
 
-		<title>Title in the tab</title>
 
-		<!-- external CSS link -->
-		<link rel="stylesheet" href="css/normalize.css">
-		<link rel="stylesheet" href="css/style.css">
-	</head>
-	<body>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- https://www.w3schools.com/icons/fontawesome_icons_intro.asp -->
+        <!-- https://unsplash.it/386/292 -->
+    
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style.css">
+      </head>
 
-		<h1>Which Cocktail?</h1>
-		<input type="text" value="enter liqueur" id="enterCocktail">
-		<button type="button" name="button" id="getCocktail">Get Cocktail</button>
-		<div id="drinkName">
-			<h2>Name</h2>
-			<button id="pause">Pause</button>
-		</div>
-		<div id="info">
-			<div class="eyes">
-				<img src="" alt="">
-			</div>
-			<div class="recipe">
-				<div id="ingredientsDiv">
-					<h3>Ingredients</h3>
-					<ul id="ingredients">
-					</ul>
-				</div>
-				<div id="instructionsDiv">
-					<h3>Instructions</h3>
-					<p id="instructions"></p>
-				</div>
-			</div>
-		</div>
-		
+    <body>
+      <main>
+        <section id="lcdScreen">
+            <div class="lcdLine" id="lineTop">
+              <span class="number" id="screenTop"></span>
+              <span class="operator" id="opTop"></span>
+            </div>
+            <div class="lcdLine" id="lineMid">
+              <span class="number" id="screenMid"></span>
+              <span class="operator" id="opMid"></span>
+            </div>
+            <div class="lcdLine" id="lineBot">
+              <span class="number" id="screenBot"></span>
+              <span class="operator" id="opBot"></span>
+            </div>
+        </section>
+        <section id="buttons">
+          <div class="row">
+            <button id="7">7</button>
+            <button id="8">8</button>
+            <button id="9">9</button>
+            <button id="div">/</button>
+          </div>
+          <div class="row">
+            <!-- <button id="4">4</button> -->
+            <button id="5">5</button>
+            <button id="6">6</button>
+            <button id="mult">x</button>
+          </div>
+          <div class="row">
+            <button id="1">1</button>
+            <button id="2">2</button>
+            <button id="3">3</button>
+            <button id="add">+</button>
+          </div>
+          <div class="row">
+            <button id="0">0</button>
+            <button id="decimal">.</button>
+            <button id="equals">=</button>
+            <button id="subt">-</button>
+          </div>
+        </section>
+      </main>
 
-		<script type="text/javascript" src="js/main.js"></script>
-	</body>
+
+      <script type="text/javascript" src="main.js"></script>
+    </body>
 </html>
